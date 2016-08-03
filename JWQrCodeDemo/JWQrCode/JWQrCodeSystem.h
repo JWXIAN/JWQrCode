@@ -35,4 +35,14 @@
  *  @param failure 失败信息
  */
 + (void)showSafariWithURL:(NSString *)qrCodeInfo success:(void(^)(NSString *responseObject))success failure:(void (^)(NSError *error))failure;
+
+/**
+ *  生成二维码
+ *
+ *  @param string 二维码信息
+ *  @param qrCodeSize 二维码Size
+ *
+ *  @return UIImage
+ */
++ (UIImage *)generateQrCodeWithString:(NSString *)string qrCodeSize:(CGFloat)qrCodeSize;
 @end
