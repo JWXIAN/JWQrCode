@@ -54,6 +54,7 @@
 		7F729ED61D519E7E009E4A8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F729EE31D519EDF009E4A8D /* JWQrCodeSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWQrCodeSystem.h; sourceTree = "<group>"; };
 		7F729EE41D519EDF009E4A8D /* JWQrCodeSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWQrCodeSystem.m; sourceTree = "<group>"; };
+		7F729EE61D51A403009E4A8D /* JWHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +150,7 @@
 			children = (
 				7F729EE31D519EDF009E4A8D /* JWQrCodeSystem.h */,
 				7F729EE41D519EDF009E4A8D /* JWQrCodeSystem.m */,
+				7F729EE61D51A403009E4A8D /* JWHeader.h */,
 			);
 			path = JWQrCode;
 			sourceTree = "<group>";
@@ -512,6 +514,7 @@
 				7F729EDB1D519E7E009E4A8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7F729EDC1D519E7E009E4A8D /* Build configuration list for PBXNativeTarget "JWQrCodeDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +523,7 @@
 				7F729EDE1D519E7E009E4A8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7F729EDF1D519E7E009E4A8D /* Build configuration list for PBXNativeTarget "JWQrCodeDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +532,7 @@
 				7F729EE11D519E7E009E4A8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
