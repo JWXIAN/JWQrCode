@@ -7,9 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <AudioToolbox/AudioToolbox.h>
 #import <UIKit/UIKit.h>
-#import <AVFoundation/AVFoundation.h>
 
 @interface JWQrCodeSystem : NSObject
 /**
@@ -17,7 +15,7 @@
  *
  *  @param open 是否打开
  */
-+ (void)boolOpenLight:(BOOL)boolOpen;
++ (void)qrCodeboolOpenLight:(BOOL)boolOpen;
 
 /**
  *  是否开启震动和声音
@@ -25,7 +23,7 @@
  *  @param boolShake 震动
  *  @param boolSound 声音
  */
-+ (void)boolOpenShake:(BOOL)boolShake boolSound:(BOOL)boolSound;
++ (void)qrCodeboolOpenShake:(BOOL)boolShake boolSound:(BOOL)boolSound;
 
 /**
  *  Safari打开扫描信息
@@ -34,7 +32,7 @@
  *  @param success 成功信息
  *  @param failure 失败信息
  */
-+ (void)showSafariWithURL:(NSString *)qrCodeInfo success:(void(^)(NSString *responseObject))success failure:(void (^)(NSError *error))failure;
++ (void)qrCodeShowSafariWithURL:(NSString *)qrCodeInfo success:(void(^)(NSString *responseObject))success failure:(void (^)(NSError *error))failure;
 
 /**
  *  生成二维码
@@ -44,5 +42,12 @@
  *
  *  @return UIImage
  */
-+ (UIImage *)generateQrCodeWithString:(NSString *)string qrCodeSize:(CGFloat)qrCodeSize;
++ (UIImage *)qrCodeGenerateWithString:(NSString *)string qrCodeSize:(CGFloat)qrCodeSize;
+
+/**
+ *  打开相册图片扫码
+ *
+ *  @param vc vc
+ */
+- (BOOL)qrCodeWithOpenPhotoAlbum:(UIViewController *)vc;
 @end
